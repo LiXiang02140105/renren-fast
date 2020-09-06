@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.testcase.dao.TestCaseDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.testcase.entity.TestCaseEntity" id="testCaseMap">
+        <result property="id" column="id"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="run" column="run"/>
+        <result property="caseName" column="case_name"/>
+        <result property="url" column="url"/>
+        <result property="params" column="params"/>
+        <result property="type" column="type"/>
+        <result property="headers" column="headers"/>
+        <result property="checkpoint" column="checkpoint"/>
+        <result property="correlation" column="correlation"/>
+        <result property="testResult" column="test_result"/>
+        <result property="varFromResult" column="var_from_result"/>
+    </resultMap>
+
+<!--    <select id="selectByMyWrapper" resultType="io.renren.modules.testcase.entity.TestCaseEntity">-->
+
+
+<!--    </select>-->
+
+
+</mapper>
